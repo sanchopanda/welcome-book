@@ -1,0 +1,27 @@
+.nav-arrows {
+  display: flex;
+
+  &__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(80);
+    height: rem(80);
+    background-color: $color-orange;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    
+    &:focus {
+      outline: none;
+    }
+
+    &--next {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+ 
+}

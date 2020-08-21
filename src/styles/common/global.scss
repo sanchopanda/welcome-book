@@ -1,0 +1,39 @@
+@import "../../libs/normalize.css/normalize";
+@import "../mixins/media";
+@import "../mixins/rem";
+@import "../utils/fonts";
+@import "../utils/typography";
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: $main-color;
+  font-family: 'Roboto Mono', monospace;
+  font-style: normal;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+
+.container {
+  padding: 0 16px;
+  margin: 0 auto;
+  @include media-tablet {
+    padding: 0 40px;
+    max-width: 1600px;
+  }
+}
