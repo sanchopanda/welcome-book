@@ -4,13 +4,20 @@ a {
 
 .h1 {
   text-transform: uppercase;
+  font-size: rem(100);
+  font-weight: normal;
+}
+
+p, .p {
+  font-size: rem(36);
+  font-weight: normal;
 }
 
 
 .text-default-small {
-    font-size: 14px;
+    font-size: rem(28);
 }
 
 .text-small {
-    font-size: 12px;
+    font-size: rem(24);
 }

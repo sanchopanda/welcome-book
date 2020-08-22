@@ -1,4 +1,4 @@
-$base-value: 16 !default;
+$base-value: 10 !default;
 
 @function strip-unit($num) {
   @return $num / ($num * 0 + 1);
