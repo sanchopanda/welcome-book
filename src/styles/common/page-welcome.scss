@@ -1,0 +1,11 @@
+.page-welcome {
+  &__par {
+    padding-right: rem(100);
+    margin-bottom: auto;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+}

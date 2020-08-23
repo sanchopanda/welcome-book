@@ -1,5 +1,8 @@
 .logo {
   display: flex; 
+  position: absolute;
+  top: rem(144);
+  left: rem(144);
   
   &__img {
     width: rem(109);

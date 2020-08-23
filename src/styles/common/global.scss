@@ -1,6 +1,8 @@
 @import "../../libs/normalize.css/normalize";
 @import "../mixins/media";
 @import "../mixins/rem";
+@import "../mixins/resets";
+@import "../mixins/animation";
 @import "../utils/fonts";
 @import "../utils/typography";
 
@@ -21,6 +23,7 @@ body {
   font-style: normal;
   font-weight: normal;
   color: #ffffff;
+  font-size: rem(36);
 }
 
 img {

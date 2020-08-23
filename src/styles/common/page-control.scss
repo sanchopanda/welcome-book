@@ -1,0 +1,39 @@
+.page-control {
+  display: flex;
+  position: absolute;
+  width: 50%;
+  padding-left: rem(40);
+  bottom: rem(114);
+  right: 0;
+    z-index: 1000;
+
+  
+  &__item {
+    @include reset-button;
+    width: rem(368);
+    height: rem(230);
+    margin-right: rem(80);
+    padding-top: rem(30);
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 100%;
+      height: rem(4);
+      background-color: $color-white;
+      top: 0;
+      left: 0;
+    }    
+  }
+
+  &__number{
+    display: block;
+    margin-bottom: rem(24);
+  }
+
+  &__number, &__text {
+    pointer-events: none;
+  }
+}

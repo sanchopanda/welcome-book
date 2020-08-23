@@ -1,12 +1,16 @@
 .nav-arrows {
   display: flex;
+  position: absolute;
+  z-index: 1000;
+  bottom: 0;
+  right: rem(380);
 
   &__arrow {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: rem(80);
-    height: rem(80);
+    width: rem(180);
+    height: rem(144);
     background-color: $color-orange;
     padding: 0;
     border: none;
@@ -14,6 +18,11 @@
     
     &:focus {
       outline: none;
+    }
+
+    svg {
+      width: rem(52);
+      height: rem(52);
     }
 
     &--next {

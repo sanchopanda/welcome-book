@@ -8,7 +8,7 @@ a {
   font-weight: normal;
 }
 
-p, .p {
+p, .text-default {
   font-size: rem(36);
   font-weight: normal;
 }
@@ -20,4 +20,8 @@ p, .p {
 
 .text-small {
     font-size: rem(24);
+}
+
+.italic {
+  font-style: italic;
 }
