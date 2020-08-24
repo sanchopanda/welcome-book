@@ -1,0 +1,53 @@
+.steps {
+
+  &__list {
+    @include reset-list;
+    display: flex;
+  }
+}
+
+.step {
+  cursor: pointer;
+
+  width: 16.66%;
+
+  &__number {
+    position: relative;
+    padding-top: rem(20);
+    padding-bottom: rem(20);    
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: rem(4);
+      background-color: currentColor;
+      top: 0;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: rem(4);
+      background-color: currentColor;
+      bottom: 0;
+      left: 0;
+    }    
+  }
+
+  &__des {
+    display: none;
+  }
+
+  &.active {
+    .step__number {
+      color: $color-orange;
+    }
+
+    .step__des {
+      display: block;
+      padding-right: rem(32);
+    }
+  }
+}

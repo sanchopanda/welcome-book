@@ -1,11 +1,6 @@
 .page-welcome {
-  &__par {
-    padding-right: rem(100);
-    margin-bottom: auto;
-  }
-
-  &__content {
-    display: flex;
-    flex-direction: column;
-  }
+  background-image: url('../img/bg/welcome-bg.jpg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: right top;
 }
