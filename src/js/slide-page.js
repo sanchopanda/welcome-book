@@ -1,4 +1,4 @@
-import { stepSlide } from './step-slide.js';
+import { startFillingProgress, resetFillingProgress } from './step-slide.js';
 
 const pages = document.querySelectorAll(".page");
 const navArrows = document.querySelector(".nav-arrows");
@@ -11,7 +11,13 @@ const choseActivePage = () => {
 const mapControl = () => {
     const controlId = choseActivePage().id
 
-   pageControl.querySelector(`[data-control="${controlId}"]`).classList.add('active');
+    const control = pageControl.querySelector(`[data-control="${controlId}"]`);
+
+    control.classList.add('active');
+
+    if (control.hasAttribute('data-progress-bar')) {
+        startFillingProgress();
+    }
 };
 
 const arrowToggle = (direction) => {
@@ -33,9 +39,10 @@ const arrowToggle = (direction) => {
         nextControl.classList.add('active');
 
         if(nextControl.hasAttribute('data-progress-bar')) {
-            stepSlide();
-        }
-
+            startFillingProgress();
+        }else {
+            resetFillingProgress();
+       }      
     };                 
 };
 
@@ -59,7 +66,12 @@ export function slidePage() {
 
            document.querySelector(`.page.active`).classList.remove('active');
            document.querySelector(`#${pageId}`).classList.add('active');
-            
+
+           if(target.hasAttribute('data-progress-bar')) {
+                startFillingProgress();
+           } else {
+                resetFillingProgress();
+           }            
         } 
     });
 

@@ -15,6 +15,7 @@
     position: relative;
     padding-top: rem(20);
     padding-bottom: rem(20);    
+    pointer-events: none;
 
     &::before {
       position: absolute;
@@ -38,6 +39,7 @@
 
   &__des {
     display: none;
+    pointer-events: none;
   }
 
   &.active {
