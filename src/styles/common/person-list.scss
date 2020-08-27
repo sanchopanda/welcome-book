@@ -1,0 +1,17 @@
+.person-list {
+  display: flex;
+  margin-top: rem(50);
+
+  &__item {
+    width: rem(370);
+    margin-right: rem(80);
+  }
+
+  &__photo {
+    margin-bottom: rem(32);
+  }
+
+  &__phone {
+    margin-top: rem(16);
+  }
+}

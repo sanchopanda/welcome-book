@@ -1,5 +1,9 @@
 .steps {
 
+  &__title {
+    margin-bottom: rem(60);
+  } 
+
   &__list {
     @include reset-list;
     display: flex;
@@ -10,6 +14,10 @@
   cursor: pointer;
 
   width: 16.66%;
+
+  &__des {
+    margin-top: rem(24);
+  }
 
   &__number {
     position: relative;
