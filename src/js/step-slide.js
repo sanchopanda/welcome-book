@@ -1,3 +1,5 @@
+import {togglePageContent} from './toggle-page-content'
+
 const stepsList = document.querySelector(".steps__list");
 
 const steps = stepsList.querySelectorAll(".step");
@@ -33,11 +35,12 @@ export function stepSlide() {
 
            document.querySelector(`.step.active`).classList.remove('active');
            target.classList.add('active');
-
           
            const index =  Array.prototype.indexOf.call(steps, e.target);
 
-           fillingProgress(index);            
+           fillingProgress(index);   
+           
+           togglePageContent(target);
         } 
     })
 };

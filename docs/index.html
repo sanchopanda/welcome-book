@@ -61,38 +61,39 @@
 			<div id="registration-steps" class=" page-first-day__steps steps">
 				<p class="h3 steps__title">6 шагов оформления сотрудника</p>
 				<ul class="steps__list" data-control-id="first-day">
-					<li class="steps__item step active">
+					<li class="steps__item step active" data-step-id="first-day-1">
 						<div class="step__number">1 шаг.</div>
 						<p class="step__des text-small italic">Проход через турникеты</p>
 					</li>
-					<li class="steps__item step">
+					<li class="steps__item step" data-step-id="first-day-2">
 						<div class="step__number">2 шаг.</div>
-						<p class="step__des text-small italic">Описание второго шага</p>
+						<p class="step__des text-small italic">Оформление в отделе кадров</p>
 					</li>
-					<li class="steps__item step">
+					<li class="steps__item step" data-step-id="first-day-3">
 						<div class="step__number">3 шаг.</div>
-						<p class="step__des text-small italic">Описание третьего шага</p>
+						<p class="step__des text-small italic">Оформление постоянного пропуска</p>
 					</li>
-					<li class="steps__item step">
+					<li class="steps__item step" data-step-id="first-day-4">
 						<div class="step__number">4 шаг.</div>
-						<p class="step__des text-small italic">Описание четвертого шага</p>
+						<p class="step__des text-small italic">Вводный инструктаж</p>
 					</li>
-					<li class="steps__item step">
+					<li class="steps__item step" data-step-id="first-day-5">
 						<div class="step__number">5 шаг.</div>
-						<p class="step__des text-small italic">Описание пятого шага</p>
+						<p class="step__des text-small italic">Оформление зарплатой карты</p>
 					</li>
-					<li class="steps__item step">
+					<li class="steps__item step" data-step-id="first-day-6">
 						<div class="step__number">6 шаг.</div>
-						<p class="step__des text-small italic">Описание шестого шага</p>
+						<p class="step__des text-small italic">Адаптационная встреча</p>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</div>
-	<div class="page__right">
-		<div class="page__content ">
+	<div class="page__right page__right--slider">
+		<div id="first-day-1" class="page__content page__content--slide active">
 			<p class="text-default page-first-day__description">
-				На первом этаже офиса Вам необходимо сказать секретарю на ресепшн, что <span class="color-orange">Вы новый сотрудник и у Вас первый рабочий день</span>. Пока сотрудники бюро пропусков будут оформлять временный пропуск за Вами спустится сотрудник Службы персонала и проводит Вас для дальнейшего оформления документов.  
+				На первом этаже офиса Вам необходимо сказать секретарю на ресепшн, что
+				<span class="color-orange">Вы новый сотрудник и у Вас первый рабочий день</span>. Пока сотрудники бюро пропусков будут оформлять временный пропуск за Вами спустится сотрудник Службы персонала и проводит Вас для дальнейшего оформления документов.
 			</p>
 			<div class="page-first-day__meet">
 				<p class="text-default">Вас встретят:</p>
@@ -102,13 +103,124 @@
 						<div class="text-small italic">Ведущий специалист</div>
 						<div class="text-default color-orange">Барбашова Марина Леонидован</div>
 						<div class="text-default-small person-list__phone">21-80</div>
-					</div> 
+					</div>
 					<div class="person-list__item">
 						<img src="img/person/person-2.jpg" alt="" class="person-list__photo">
 						<div class="text-small italic">Специалист</div>
 						<div class="text-default color-orange">Босунова Дарья Александровна</div>
 						<div class="text-default-small person-list__phone">28-37</div>
 					</div>
+				</div>
+			</div>
+		</div>
+		<div id="first-day-2" class="page__content page__content--slide">
+			<p class="text-default page-first-day__description">
+				Оформление в Отделе по кадровому администрированию и методологии
+				<span class="color-orange">(5 этаж, кабинет 502)</span>
+				займёт не менее 1 часа, потому что вам нужно будет ознакомиться с локальными нормативными документами Компании.
+			</p>
+			<div class="page-first-day__meet">
+				<p class="text-default">Вашим оформлением занимаются:</p>
+				<div class="page-first-day__meet-person person-list">
+					<div class="person-list__item">
+						<img src="img/person/person-3.jpg" alt="" class="person-list__photo">
+						<div class="text-small italic">Начальник отдела</div>
+						<div class="text-default color-orange">Гронская Татьяна Генадьевна</div>
+						<div class="text-default-small person-list__phone">20-26</div>
+					</div>
+					<div class="person-list__item">
+						<img src="img/person/person-4.jpg" alt="" class="person-list__photo">
+						<div class="text-small italic">Ведущий специалист</div>
+						<div class="text-default color-orange">Бударина Александра Михайловна</div>
+						<div class="text-default-small person-list__phone">25-06</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="first-day-3" class="page__content page__content--slide">
+			<p class="text-default page-first-day__description">
+				Постоянный пропуск для прохода в здание Вы оформите в Службе экономической безопасности
+				<span class="color-orange">(5 этаж, кабинет 518)</span>, вас проводят туда сотрудники Отдела кадрового администрирования и методологии. Для оформления пропуска вас сфотографируют и попросят заполнить анкету, поэтому паспорт необходимо взять с собой.
+			</p>
+			<div class="page-first-day__meet">
+				<p class="text-default">Оформлением пропуска занимаются:</p>
+				<div class="page-first-day__meet-person person-list">
+					<div class="person-list__item">
+						<img src="img/person/person-5.jpg" alt="" class="person-list__photo">
+						<div class="text-small italic">Секретарь СЭБ</div>
+						<div class="text-default color-orange">Шаманина Ирина Аркадьевна</div>
+						<div class="text-default-small person-list__phone">25-26</div>
+					</div>
+					<div class="person-list__item">
+						<img src="img/person/person-5.jpg" alt="" class="person-list__photo">
+						<div class="text-small italic">Служба пропусков</div>
+						<div class="text-default color-orange">??????????????????</div>
+						<div class="text-default-small person-list__phone">25-06</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="first-day-4" class="page__content page__content--slide">
+			<p class="text-default page-first-day__description">
+				Пройти вводный инструктаж по охране труда обязательно нужно на
+				<span class="color-orange">2 этаже в кабинете 202</span>
+			</p>
+			<div class="page-first-day__meet">
+				<p class="text-default">Инструктаж проведет:</p>
+				<div class="page-first-day__meet-person person-list">
+					<div class="person-list__item">
+						<img src="img/person/person-6.jpg" alt="" class="person-list__photo">
+						<div class="text-small italic">Руководитель службы охраны труда</div>
+						<div class="text-default color-orange">Артемьева Валентина Владимировна</div>
+						<div class="text-default-small person-list__phone">24-95</div>
+					</div>
+					<div class="person-list__item">
+						<img src="img/person/person-5.jpg" alt="" class="person-list__photo">
+						<div class="text-small italic">Служба пропусков</div>
+						<div class="text-default color-orange">??????????????????</div>
+						<div class="text-default-small person-list__phone">25-06</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="first-day-5" class="page__content page__content--slide">
+			<p class="text-default page-first-day__description">
+				Чтобы оформить зарплатную карту (зарплатный проект Сбербанка РФ) необходимо будет подняться на
+				<span class="color-orange">8 этаж, кабинет 807</span>
+				и опять нужно не забыть паспорт.
+			</p>
+			<div class="page-first-day__meet">
+				<p class="text-default">Вам помогут:</p>
+				<div class="page-first-day__meet-person person-list">
+					<div class="person-list__item">
+						<img src="img/person/person-5.jpg" alt="" class="person-list__photo">
+						<div class="text-small italic">Начальник отдела</div>
+						<div class="text-default color-orange">Сидорова Серафима Владимировна</div>
+						<div class="text-default-small person-list__phone">21-61</div>
+					</div>
+					<div class="person-list__item">
+						<img src="img/person/person-7.jpg" alt="" class="person-list__photo">
+						<div class="text-small italic">Старший бухгалтер</div>
+						<div class="text-default color-orange">Кудякова Татьяна Ахмедовна</div>
+						<div class="text-default-small person-list__phone">21-60</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="first-day-6" class="page__content page__content--slide">
+			<p class="text-default page-first-day__description">
+				Также обязательно нужно посетить адаптационную встречу "Добро пожаловать в ТМК"
+				<span class="color-orange">в 501 кабинете 5го этажа</span>
+			</p>
+			<div class="page-first-day__meet">
+				<p class="text-default">Встречу проведет:</p>
+				<div class="page-first-day__meet-person person-list">
+					<div class="person-list__item">
+						<img src="img/person/person-8.jpg" alt="" class="person-list__photo">
+						<div class="text-small italic">Начальник отдела привлечения, адаптации и развития персонала</div>
+						<div class="text-default color-orange">Савельева Екатерина Аркадьевна</div>
+						<div class="text-default-small person-list__phone">20-31</div>
+					</div>					
 				</div>
 			</div>
 		</div>

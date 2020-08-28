@@ -1,8 +1,8 @@
 .page {
   padding: rem(144) rem(72) rem(154) rem(154);
 
-  min-height: 100vh;
-  height: 50vw;
+  //min-height: 100vh;
+  height: 62.5vw;
 
   &:not(.page--static) {
     display: none;
@@ -25,14 +25,20 @@
   }  
 
   &__content {
+    display: flex;
+    flex-direction: column;
     border-top: rem(4) solid $color-white;
     height: 100%;
     padding-top: rem(90);
-  }
 
-  &__content {
-    display: flex;
-    flex-direction: column;
-  } 
+    &--slide {
+      display: none;
+
+      &.active {
+        display: flex;
+        @include fade-in;
+      }
+    }
+  }
 
 }
