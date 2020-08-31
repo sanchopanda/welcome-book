@@ -1,0 +1,43 @@
+.factor-list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    width: 50%;
+    padding-right: rem(80);
+
+    &:nth-last-child(-n+2) {
+      .factor {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+.factor-list-geografy {
+  @include reset-list;
+  display: flex;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+
+  &__item {
+    flex-grow: 1;
+  }
+}
+
+.factor {
+  display: flex;
+  flex-direction: column;
+  height: rem(440);
+  padding-top: rem(90);
+  border-bottom: $color-orange solid 0.4rem;
+}
+
+.factor-geografy {
+  display: flex;
+  flex-direction: column;
+}
+
+

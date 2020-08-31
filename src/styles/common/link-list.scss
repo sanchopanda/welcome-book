@@ -1,0 +1,11 @@
+.link-list {
+  @include reset-list;
+  display: flex;
+}
+
+.link-toggle {
+  margin-right: rem(10);
+  &.active {
+    color: $color-orange;
+  }
+}

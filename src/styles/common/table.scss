@@ -1,0 +1,28 @@
+.table {
+  &__title {
+    margin-bottom: rem(60);
+  }
+
+  &__right {
+    text-align: right;
+  }
+
+  &__note {
+    margin-top: rem(60);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  td {
+    padding-top: rem(30);
+    padding-bottom: rem(30);
+    border-top: 0.5rem solid $color-white;
+    border-bottom: 0.5rem solid $color-white;
+  }
+}
+
+
+

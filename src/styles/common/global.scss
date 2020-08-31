@@ -13,6 +13,27 @@
   box-sizing: inherit;
 }
 
+/* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+  width: rem(4); /* ширина для вертикального скролла */
+  background-color: $color-gray;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+  background-color: $color-orange;
+}
+/* Стрелки */
+
+::-webkit-scrollbar-button:vertical:start:decrement {
+ display: none;
+}
+
+::-webkit-scrollbar-button:vertical:end:increment {
+  display: none;
+}
+
+
 html {
   box-sizing: border-box;
 }
@@ -46,4 +67,8 @@ img {
   background-image: url('../img/bg/main-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.scroll-wrapper {
+  overflow-y: scroll;
 }

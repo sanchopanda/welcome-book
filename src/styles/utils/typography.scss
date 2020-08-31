@@ -3,6 +3,7 @@ a {
 }
 
 .h1 {
+  display: block;
   text-transform: uppercase;
   font-size: rem(100);
   font-weight: 600;
@@ -14,10 +15,15 @@ a {
   font-weight: 600;
 }
 
+.text-large {
+  font-size: rem(60);
+  font-weight: 400;
+}
+
 p, .text-default {
   font-size: rem(36);
   font-weight: normal;
-  margin: 0;
+  //margin: 0;
 }
 
 

@@ -14,7 +14,7 @@
   }
 
   .container {
-    display: flex;    
+    display: flex;
   }
 
   &__left, &__right {
@@ -22,7 +22,7 @@
     padding-right: rem(224);
     padding-top: rem(256);
     padding-bottom: rem(230);
-  }  
+  }
 
   &__content {
     display: flex;
@@ -30,6 +30,11 @@
     border-top: rem(4) solid $color-white;
     height: 100%;
     padding-top: rem(90);
+
+    &--scroll {
+      position: relative;
+      padding-top: rem(20);
+    }
 
     &--slide {
       display: none;
@@ -39,6 +44,24 @@
         @include fade-in;
       }
     }
+
+    &--factors {
+      padding-top: 0;
+    }
+
+    &--geografy {
+      position: relative;
+    }
   }
 
+  &__subpage {
+    display: none;
+    width: 100%;
+    padding-right: rem(80);
+
+    &.active {
+      display: flex;
+      @include fade-in;
+    }
+  }
 }

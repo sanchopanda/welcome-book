@@ -27,7 +27,11 @@
 
 			{% include 'first-day.twig' %}
 
-			<div class="page-control">
+      {% include 'useful.twig' %}
+
+      {% include 'info.twig' %}
+
+      <div class="page-control">
 				<div class="page-control__item" data-control="welcome">
 					<div class="page-control__progress"></div>
 					<span class="page-control__number">01.</span>
@@ -44,7 +48,25 @@
 						рабочий день в ТМК
 					</span>
 				</div>
-			</div>
+        <div class="page-control__item" data-control="useful">
+          <div class="page-control__progress"></div>
+          <span class="page-control__number">03.</span>
+          <span class="page-control__text">
+						Полезная<br>
+						информация
+					</span>
+        </div>
+        <div class="page-control__item" data-control="info">
+          <div class="page-control__progress"></div>
+          <span class="page-control__number">04.</span>
+          <span class="page-control__text">
+						Информация<br>
+						о комании
+					</span>
+        </div>
+
+      </div>
+
 			<div class="page__nav-arrows nav-arrows">
 				<button class="nav-arrows__arrow nav-arrows__arrow--prev">
 					<svg xmlns="http://www.w3.org/2000/svg" width="52" height="51" viewbox="0 0 52 51">
