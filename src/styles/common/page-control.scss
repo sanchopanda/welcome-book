@@ -20,7 +20,7 @@
 
     transition: width .5s ease-in-out;
 
-    @at-root .page-control__item.active & {
+    @at-root .active & {
       width: 100%;
     }
   }
