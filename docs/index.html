@@ -10,6 +10,8 @@
 	</head>
 
 	<body>
+
+
 		<div class="app">
 			<div class="logo text-default-small">
 				<div class="logo__img">
@@ -22,29 +24,54 @@
 				</div>
 			</div>
 
-
-			<div id="welcome" class="page page-welcome">
+			<div id="page-slider" class="app__section active">
+				<div id="welcome" class="page page-welcome">
 	<div class="page__left">
 		<div class="page__content page-welcome__content">
-			<h1 class="h1">
+			<h1 class="h1 page-welcome__title">
 				<span class="color-orange">Добро<br>
 					пожаловать</span><br>
 				в компанию
 
 			</h1>
+			<div class="arrow">
+				<svg xmlns="http://www.w3.org/2000/svg" width="38.312" height="38.312" fill="currentColor" viewbox="0 0 38.312 38.312">
+					<path d="M188,849h4v36h-4V849Zm-32,36v-4h36v4H156Zm-2.142-35.314,2.828-2.828,35.456,35.456-2.828,2.828Z" transform="translate(-153.844 -846.844)"/>
+				</svg>
+			</div>
 			<p class="pr-100 mb-auto">
 				Скоро Вы станете сотрудником Публичного акционерного общества «Трубная Металлургическая Компания». Мы хотим помочь Вам быстрее адаптироваться в компании, понять ее обычаи и традиции, усвоить правила и нормы поведения, научиться ориентироваться как в офисе,
-																																																																														так и в бизнес-процессах Компании, то есть стать полноценным членом команды ТМК. Ниже расположена информация, которая поможет вам познакомиться с историей Компании, географией ее присутствия, руководством и действующим Кодексом этики.
+																																																																																						так и в бизнес-процессах Компании, то есть стать полноценным членом команды ТМК. Ниже расположена информация, которая поможет вам познакомиться с историей Компании, географией ее присутствия, руководством и действующим Кодексом этики.
 			</p>
-			<p class="text-default-small color-orange">Позолотина Елена Ивановна</p>
-			<p class="text-small italic">Заместитель генерального директора по упрапвлению персоналом – Директор корпоративного университета ТМК2U</p>
+			<p class="text-default-small color-orange mb-20">Позолотина Елена Ивановна</p>
+			<p class="text-small italic mb-80">Заместитель генерального директора по упрапвлению персоналом –<br>
+				Директор корпоративного университета ТМК2U</p>
+
+			<div class="actions-block">
+				<button class="action section-toggler" data-section="info">
+					О компании ТМК
+					<div class="arrow">
+						<svg xmlns="http://www.w3.org/2000/svg" width="38.312" height="38.312" fill="currentColor" viewbox="0 0 38.312 38.312">
+							<path d="M188,849h4v36h-4V849Zm-32,36v-4h36v4H156Zm-2.142-35.314,2.828-2.828,35.456,35.456-2.828,2.828Z" transform="translate(-153.844 -846.844)"/>
+						</svg>
+					</div>
+				</button>
+				<button class="action">
+					Кодекс этики ПАО "ТМК"
+					<div class="arrow">
+						<svg xmlns="http://www.w3.org/2000/svg" width="38.312" height="38.312" fill="currentColor" viewbox="0 0 38.312 38.312">
+							<path d="M188,849h4v36h-4V849Zm-32,36v-4h36v4H156Zm-2.142-35.314,2.828-2.828,35.456,35.456-2.828,2.828Z" transform="translate(-153.844 -846.844)"/>
+						</svg>
+					</div>
+				</button>
+			</div>
 		</div>
 
 	</div>
 	<div class="page__right"></div>
 </div>
 
-			<div id="first-day" class="page page-first-day">
+				<div id="first-day" class="page page-first-day active">
 	<div class="page__left">
 		<div class="page__content">
 			<h1 class="h1 color-orange">
@@ -227,7 +254,7 @@
 	</div>
 </div>
 
-      <div id="useful" class="page page-useful">
+				<div id="useful" class="page page-useful">
   <div class="page__left">
     <div class="page__content page-useful__content">
       <h1 class="h1">
@@ -301,8 +328,50 @@
   </div>
 </div>
 
-      <div id="info" class="page page-info active">
-  <div class="page__subpage page-subpage-history">
+				<div class="page-control">
+					<div class="page-control__item" data-control="welcome">
+						<div class="page-control__progress"></div>
+						<span class="page-control__number">01.</span>
+						<span class="page-control__text">
+							Добро<br>
+							пожаловать
+						</span>
+					</div>
+					<div class="page-control__item" data-control="first-day" data-progress-bar>
+						<div class="page-control__progress"></div>
+						<span class="page-control__number">02.</span>
+						<span class="page-control__text">
+							Ваш первый<br>
+							рабочий день в ТМК
+						</span>
+					</div>
+					<div class="page-control__item" data-control="useful">
+						<div class="page-control__progress"></div>
+						<span class="page-control__number">03.</span>
+						<span class="page-control__text">
+							Полезная<br>
+							информация
+						</span>
+					</div>
+				</div>
+
+				<div class="page__nav-arrows nav-arrows">
+					<button class="nav-arrows__arrow nav-arrows__arrow--prev">
+						<svg xmlns="http://www.w3.org/2000/svg" width="52" height="51" viewbox="0 0 52 51">
+							<path d="M2695.41,2000.37l-2.82-2.83L2667.13,2023l2.83,2.83Zm-2.82,48.09,2.82-2.83-25.45-25.46-2.83,2.83Zm26.48-23.46v-4h-50.14v4h50.14Z" transform="translate(-2667.12 -1997.53)"/>
+						</svg>
+					</button>
+					<button class="nav-arrows__arrow nav-arrows__arrow--next">
+						<svg xmlns="http://www.w3.org/2000/svg" width="52" height="51" viewbox="0 0 52 51">
+							<path d="M2695.41,2000.37l-2.82-2.83L2667.13,2023l2.83,2.83Zm-2.82,48.09,2.82-2.83-25.45-25.46-2.83,2.83Zm26.48-23.46v-4h-50.14v4h50.14Z" transform="translate(-2667.12 -1997.53)"/>
+						</svg>
+					</button>
+				</div>
+			</div>
+
+			<div id="info" class="app__section">
+				<div class="info">
+  <div class="page page--history active">
     <div class="page__left">
       <div class="page__content page__content--scroll">
         <div class="scroll-wrapper">
@@ -383,7 +452,7 @@
       </div>
     </div>
   </div>
-  <div class="page__subpage page-subpage-geografy active">
+  <div class="page page--geografy">
     <div class="page__left">
       <div class="page__content page__content--geografy">
         <ul class="factor-list-geografy">
@@ -416,55 +485,9 @@
     </div>
   </div>
 </div>
-
-      <div class="page-control">
-				<div class="page-control__item" data-control="welcome">
-					<div class="page-control__progress"></div>
-					<span class="page-control__number">01.</span>
-					<span class="page-control__text">
-						Добро<br>
-						пожаловать
-					</span>
-				</div>
-				<div class="page-control__item" data-control="first-day" data-progress-bar>
-					<div class="page-control__progress"></div>
-					<span class="page-control__number">02.</span>
-					<span class="page-control__text">
-						Ваш первый<br>
-						рабочий день в ТМК
-					</span>
-				</div>
-        <div class="page-control__item" data-control="useful">
-          <div class="page-control__progress"></div>
-          <span class="page-control__number">03.</span>
-          <span class="page-control__text">
-						Полезная<br>
-						информация
-					</span>
-        </div>
-        <div class="page-control__item" data-control="info">
-          <div class="page-control__progress"></div>
-          <span class="page-control__number">04.</span>
-          <span class="page-control__text">
-						Информация<br>
-						о комании
-					</span>
-        </div>
-
-      </div>
-
-			<div class="page__nav-arrows nav-arrows">
-				<button class="nav-arrows__arrow nav-arrows__arrow--prev">
-					<svg xmlns="http://www.w3.org/2000/svg" width="52" height="51" viewbox="0 0 52 51">
-						<path d="M2695.41,2000.37l-2.82-2.83L2667.13,2023l2.83,2.83Zm-2.82,48.09,2.82-2.83-25.45-25.46-2.83,2.83Zm26.48-23.46v-4h-50.14v4h50.14Z" transform="translate(-2667.12 -1997.53)"/>
-					</svg>
-				</button>
-				<button class="nav-arrows__arrow nav-arrows__arrow--next">
-					<svg xmlns="http://www.w3.org/2000/svg" width="52" height="51" viewbox="0 0 52 51">
-						<path d="M2695.41,2000.37l-2.82-2.83L2667.13,2023l2.83,2.83Zm-2.82,48.09,2.82-2.83-25.45-25.46-2.83,2.83Zm26.48-23.46v-4h-50.14v4h50.14Z" transform="translate(-2667.12 -1997.53)"/>
-					</svg>
-				</button>
 			</div>
+
+
 
 			<div class="copyright text-default-small">© 2020 ПАО ТМК</div>
 
