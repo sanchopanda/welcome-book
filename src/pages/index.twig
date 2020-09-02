@@ -10,6 +10,8 @@
 	</head>
 
 	<body>
+
+
 		<div class="app">
 			<div class="logo text-default-small">
 				<div class="logo__img">
@@ -22,63 +24,59 @@
 				</div>
 			</div>
 
+			<div id="page-slider" class="app__section active">
+				{% include 'welcome.twig' %}
 
-			{% include 'welcome.twig' %}
+				{% include 'first-day.twig' %}
 
-			{% include 'first-day.twig' %}
+				{% include 'useful.twig' %}
 
-      {% include 'useful.twig' %}
-
-      {% include 'info.twig' %}
-
-      <div class="page-control">
-				<div class="page-control__item" data-control="welcome">
-					<div class="page-control__progress"></div>
-					<span class="page-control__number">01.</span>
-					<span class="page-control__text">
-						Добро<br>
-						пожаловать
-					</span>
+				<div class="page-control">
+					<div class="page-control__item" data-control="welcome">
+						<div class="page-control__progress"></div>
+						<span class="page-control__number">01.</span>
+						<span class="page-control__text">
+							Добро<br>
+							пожаловать
+						</span>
+					</div>
+					<div class="page-control__item" data-control="first-day" data-progress-bar>
+						<div class="page-control__progress"></div>
+						<span class="page-control__number">02.</span>
+						<span class="page-control__text">
+							Ваш первый<br>
+							рабочий день в ТМК
+						</span>
+					</div>
+					<div class="page-control__item" data-control="useful">
+						<div class="page-control__progress"></div>
+						<span class="page-control__number">03.</span>
+						<span class="page-control__text">
+							Полезная<br>
+							информация
+						</span>
+					</div>
 				</div>
-				<div class="page-control__item" data-control="first-day" data-progress-bar>
-					<div class="page-control__progress"></div>
-					<span class="page-control__number">02.</span>
-					<span class="page-control__text">
-						Ваш первый<br>
-						рабочий день в ТМК
-					</span>
+
+				<div class="page__nav-arrows nav-arrows">
+					<button class="nav-arrows__arrow nav-arrows__arrow--prev">
+						<svg xmlns="http://www.w3.org/2000/svg" width="52" height="51" viewbox="0 0 52 51">
+							<path d="M2695.41,2000.37l-2.82-2.83L2667.13,2023l2.83,2.83Zm-2.82,48.09,2.82-2.83-25.45-25.46-2.83,2.83Zm26.48-23.46v-4h-50.14v4h50.14Z" transform="translate(-2667.12 -1997.53)"/>
+						</svg>
+					</button>
+					<button class="nav-arrows__arrow nav-arrows__arrow--next">
+						<svg xmlns="http://www.w3.org/2000/svg" width="52" height="51" viewbox="0 0 52 51">
+							<path d="M2695.41,2000.37l-2.82-2.83L2667.13,2023l2.83,2.83Zm-2.82,48.09,2.82-2.83-25.45-25.46-2.83,2.83Zm26.48-23.46v-4h-50.14v4h50.14Z" transform="translate(-2667.12 -1997.53)"/>
+						</svg>
+					</button>
 				</div>
-        <div class="page-control__item" data-control="useful">
-          <div class="page-control__progress"></div>
-          <span class="page-control__number">03.</span>
-          <span class="page-control__text">
-						Полезная<br>
-						информация
-					</span>
-        </div>
-        <div class="page-control__item" data-control="info">
-          <div class="page-control__progress"></div>
-          <span class="page-control__number">04.</span>
-          <span class="page-control__text">
-						Информация<br>
-						о комании
-					</span>
-        </div>
-
-      </div>
-
-			<div class="page__nav-arrows nav-arrows">
-				<button class="nav-arrows__arrow nav-arrows__arrow--prev">
-					<svg xmlns="http://www.w3.org/2000/svg" width="52" height="51" viewbox="0 0 52 51">
-						<path d="M2695.41,2000.37l-2.82-2.83L2667.13,2023l2.83,2.83Zm-2.82,48.09,2.82-2.83-25.45-25.46-2.83,2.83Zm26.48-23.46v-4h-50.14v4h50.14Z" transform="translate(-2667.12 -1997.53)"/>
-					</svg>
-				</button>
-				<button class="nav-arrows__arrow nav-arrows__arrow--next">
-					<svg xmlns="http://www.w3.org/2000/svg" width="52" height="51" viewbox="0 0 52 51">
-						<path d="M2695.41,2000.37l-2.82-2.83L2667.13,2023l2.83,2.83Zm-2.82,48.09,2.82-2.83-25.45-25.46-2.83,2.83Zm26.48-23.46v-4h-50.14v4h50.14Z" transform="translate(-2667.12 -1997.53)"/>
-					</svg>
-				</button>
 			</div>
+
+			<div id="info" class="app__section">
+				{% include 'info.twig' %}
+			</div>
+
+
 
 			<div class="copyright text-default-small">© 2020 ПАО ТМК</div>
 

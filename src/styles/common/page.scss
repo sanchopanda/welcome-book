@@ -25,6 +25,7 @@
   }
 
   &__content {
+    position: relative;
     display: flex;
     flex-direction: column;
     border-top: rem(4) solid $color-white;
