@@ -5,6 +5,7 @@
 
 .link-toggle {
   margin-right: rem(10);
+  cursor: pointer;
   &.active {
     color: $color-orange;
   }

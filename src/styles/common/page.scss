@@ -44,7 +44,7 @@
         display: flex;
         @include fade-in;
       }
-    }
+    }   
 
     &--factors {
       padding-top: 0;
@@ -52,6 +52,10 @@
 
     &--geografy {
       position: relative;
+    }
+
+    &--info {
+      padding-top: rem(400);
     }
   }
 
