@@ -1,0 +1,14 @@
+.mouse-parallax-bg {
+  position: absolute;
+  background-image: url("../img/bg/paralax-bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;  
+  width: 50%;
+  height: 80%;
+  right: 0;
+  bottom: 0;
+  transition: all 0.1s ease;  
+
+  
+}

@@ -1,0 +1,28 @@
+.bottom-text {
+  position: absolute;
+  bottom: rem(144);
+  right: rem(385);
+  transform: translateY(-0.7rem);
+  z-index: 1000;
+
+  display: flex;
+  flex-wrap: nowrap;
+
+  &__item:not(:last-child) {
+    margin-right: rem(150);
+  }
+
+  &__item {
+    &:hover {
+      color: $color-orange;
+    }
+  }
+
+  a {
+    color: $color-white;
+
+    &:hover {
+      color: $color-orange;
+    }
+  }
+}
