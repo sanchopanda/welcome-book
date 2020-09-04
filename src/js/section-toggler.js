@@ -14,6 +14,13 @@ export function sectionToggler() {
             if(targetSection && !targetSection.classList.contains('active')) {
                 document.querySelector('.app__section.active').classList.remove('active');
                 targetSection.classList.add('active');
+            }
+
+            if(toggle.hasAttribute('data-control')){
+                const id = toggle.dataset.control;
+                console.log(id);
+                document.querySelector(`.page.active`).classList.remove('active');
+                document.querySelector(`#${id}`).classList.add('active');
 
                 mapControl();
             }

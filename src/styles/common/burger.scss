@@ -1,0 +1,24 @@
+
+.burger {
+  @include reset-button;
+
+  position: absolute;
+
+  top: rem(144);
+  right: rem(144);
+
+  width: rem(38);
+  height: rem(20);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  span {
+    display: block;
+
+    width: 100%;
+    height: rem(4);
+    background-color: currentColor;
+  }
+}

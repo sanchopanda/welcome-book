@@ -3,7 +3,6 @@ import { startFillingProgress, resetFillingProgress } from './step-slide.js';
 const pages = document.querySelectorAll(".page");
 const navArrows = document.querySelector(".nav-arrows");
 const pageControl = document.querySelector(".page-control");
-const pageControls = document.querySelectorAll("[data-control]")
 
 const choseActivePage = () => {
     return document.querySelector('.page.active');
@@ -56,9 +55,7 @@ export function slidePage() {
         page.dataset.slide = index;
     })
 
-    mapControl();
-
-    pageControls.forEach
+    mapControl();    
 
     pageControl.addEventListener('click', (e) => {
         const target = e.target;

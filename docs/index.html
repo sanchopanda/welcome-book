@@ -10,10 +10,17 @@
 	</head>
 
 	<body>
-		<div class="app">
-			<div id="page-starter" class="page page-starter app__section active section-toggler" data-section="page-slider" data-control="first-day">
+		<div class="app">			
+
+			<div id="page-starter" class="page page-starter app__section active">
+				<button class="burger">
+					<span>
+					</span>
+					<span>
+					</span>
+				</button>
 				<div class="page-content">
-					<button class="page-starter__button">
+					<button class="page-starter__button section-toggler" data-section="page-slider" data-control="welcome">
 						<div class="page-starter__number">01.</div>
 						<div class="page-starter__text h1">Добро пожаловать</div>
 						<div class="arrow">
@@ -22,7 +29,7 @@
 							</svg>
 						</div>
 					</button>
-					<button class="page-starter__button">
+					<button class="page-starter__button section-toggler" data-section="page-slider" data-control="first-day">
 						<div class="page-starter__number">02.</div>
 						<div class="page-starter__text h1">Ваш первый рабочий день</div>
 						<div class="arrow">
@@ -31,7 +38,7 @@
 							</svg>
 						</div>
 					</button>
-					<button class="page-starter__button">
+					<button class="page-starter__button section-toggler" data-section="page-slider" data-control="useful">
 						<div class="page-starter__number">03.</div>
 						<div class="page-starter__text h1">Полезная информация</div>
 						<div class="arrow">
@@ -63,6 +70,13 @@
 			</div>
 
 			<div id="page-slider" class="app__section">
+				<button class="burger section-toggler" data-section="page-starter">
+					<span>
+					</span>
+					<span>
+					</span>
+				</button>
+
 				<div id="welcome" class="page page-welcome">
 	<div class="page__left">
 		<div class="page__content page-welcome__content">
