@@ -3,22 +3,26 @@ import { startFillingProgress, resetFillingProgress } from './step-slide.js';
 const pages = document.querySelectorAll(".page");
 const navArrows = document.querySelector(".nav-arrows");
 const pageControl = document.querySelector(".page-control");
+const pageControls = document.querySelectorAll("[data-control]")
 
 const choseActivePage = () => {
     return document.querySelector('.page.active');
 }
 
-const mapControl = () => {
+export function mapControl() {
     const controlId = choseActivePage().id
 
     const control = pageControl.querySelector(`[data-control="${controlId}"]`);
 
-    control.classList.add('active');
+    if(control) {
+        control.classList.add('active');
 
-    if (control.hasAttribute('data-progress-bar')) {
-        startFillingProgress();
-    }
+        if (control.hasAttribute('data-progress-bar')) {
+            startFillingProgress();
+        }
+    }    
 };
+   
 
 const arrowToggle = (direction) => {
     const activePage =  document.querySelector(`.page.active`);
@@ -53,6 +57,8 @@ export function slidePage() {
     })
 
     mapControl();
+
+    pageControls.forEach
 
     pageControl.addEventListener('click', (e) => {
         const target = e.target;

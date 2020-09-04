@@ -1,4 +1,4 @@
-
+import { mapControl } from './slide-page'
 
 const toggleList = document.querySelectorAll(".section-toggler");
 
@@ -14,6 +14,8 @@ export function sectionToggler() {
             if(targetSection && !targetSection.classList.contains('active')) {
                 document.querySelector('.app__section.active').classList.remove('active');
                 targetSection.classList.add('active');
+
+                mapControl();
             }
             
         })
