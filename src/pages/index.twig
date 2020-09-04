@@ -10,9 +10,47 @@
 	</head>
 
 	<body>
-
-
 		<div class="app">
+			<div id="page-starter" class="page page-starter app__section active section-toggler" data-section="page-slider" data-control="first-day">
+				<div class="page-content">
+					<button class="page-starter__button">
+						<div class="page-starter__number">01.</div>
+						<div class="page-starter__text h1">Добро пожаловать</div>
+						<div class="arrow">
+							<svg xmlns="http://www.w3.org/2000/svg" width="38.312" height="38.312" fill="currentColor" viewbox="0 0 38.312 38.312">
+								<path d="M188,849h4v36h-4V849Zm-32,36v-4h36v4H156Zm-2.142-35.314,2.828-2.828,35.456,35.456-2.828,2.828Z" transform="translate(-153.844 -846.844)"/>
+							</svg>
+						</div>
+					</button>
+					<button class="page-starter__button">
+						<div class="page-starter__number">02.</div>
+						<div class="page-starter__text h1">Ваш первый рабочий день</div>
+						<div class="arrow">
+							<svg xmlns="http://www.w3.org/2000/svg" width="38.312" height="38.312" fill="currentColor" viewbox="0 0 38.312 38.312">
+								<path d="M188,849h4v36h-4V849Zm-32,36v-4h36v4H156Zm-2.142-35.314,2.828-2.828,35.456,35.456-2.828,2.828Z" transform="translate(-153.844 -846.844)"/>
+							</svg>
+						</div>
+					</button>
+					<button class="page-starter__button">
+						<div class="page-starter__number">03.</div>
+						<div class="page-starter__text h1">Полезная информация</div>
+						<div class="arrow">
+							<svg xmlns="http://www.w3.org/2000/svg" width="38.312" height="38.312" fill="currentColor" viewbox="0 0 38.312 38.312">
+								<path d="M188,849h4v36h-4V849Zm-32,36v-4h36v4H156Zm-2.142-35.314,2.828-2.828,35.456,35.456-2.828,2.828Z" transform="translate(-153.844 -846.844)"/>
+							</svg>
+						</div>
+					</button>
+					<button class="page-starter__button">
+						<div class="page-starter__number">04.</div>
+						<div class="page-starter__text h1">Кодекс этики</div>
+						<div class="arrow">
+							<svg xmlns="http://www.w3.org/2000/svg" width="38.312" height="38.312" fill="currentColor" viewbox="0 0 38.312 38.312">
+								<path d="M188,849h4v36h-4V849Zm-32,36v-4h36v4H156Zm-2.142-35.314,2.828-2.828,35.456,35.456-2.828,2.828Z" transform="translate(-153.844 -846.844)"/>
+							</svg>
+						</div>
+					</button>
+				</div>
+			</div>
 			<div class="logo text-default-small">
 				<div class="logo__img">
 					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="109" height="109" viewbox="0 0 109 109">
@@ -24,7 +62,7 @@
 				</div>
 			</div>
 
-			<div id="page-slider" class="app__section active">
+			<div id="page-slider" class="app__section">
 				{% include 'welcome.twig' %}
 
 				{% include 'first-day.twig' %}
@@ -75,7 +113,6 @@
 			<div id="info" class="app__section">
 				{% include 'info.twig' %}
 			</div>
-
 
 
 			<div class="copyright text-default-small">© 2020 ПАО ТМК</div>
