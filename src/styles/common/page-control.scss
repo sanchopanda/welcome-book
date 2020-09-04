@@ -1,11 +1,14 @@
 .page-control {
-  display: flex;
   position: absolute;
-  width: 50%;
-  padding-left: rem(40);
+  width: calc(50% - 4rem);
   bottom: rem(150);
   right: 0;
   z-index: 1000;
+  overflow: hidden;
+
+  &__wrapper {
+    display: flex;
+  }
 
 
   &__progress {

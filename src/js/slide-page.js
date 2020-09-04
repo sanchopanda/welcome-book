@@ -1,5 +1,8 @@
 import { startFillingProgress, resetFillingProgress } from './step-slide.js';
 
+import { scrollControls } from './scroll-controls.js';
+
+
 const pages = document.querySelectorAll(".page");
 const navArrows = document.querySelector(".nav-arrows");
 const pageControl = document.querySelector(".page-control");
@@ -29,23 +32,28 @@ const arrowToggle = (direction) => {
     const nextSlideId = +activeSlideId + direction;
     const nextPage = document.querySelector(`.page[data-slide='${nextSlideId}']`);
 
+
     if(nextPage) {
         const activeId = activePage.id;
-        const nextId = nextPage.id
+        const nextId = nextPage.id;
+        console.log(nextSlideId);
+        if(nextSlideId >= 1 && nextSlideId <= 3) {
+            const nextControl = document.querySelector(`.page-control__item[data-control = "${nextId}"]`);
 
-        const nextControl = document.querySelector(`[data-control = "${nextId}"]`);
-
-        activePage.classList.remove('active');
-        nextPage.classList.add('active');
-
-        document.querySelector(`[data-control = "${activeId}"]`).classList.remove('active');
-        nextControl.classList.add('active');
-
-        if(nextControl.hasAttribute('data-progress-bar')) {
-            startFillingProgress();
-        }else {
-            resetFillingProgress();
-       }      
+            activePage.classList.remove('active');
+            nextPage.classList.add('active');   
+    
+            document.querySelector(`.page-control__item[data-control = "${activeId}"]`).classList.remove('active');
+            nextControl.classList.add('active');
+    
+            scrollControls();
+    
+            if(nextControl.hasAttribute('data-progress-bar')) {
+                startFillingProgress();
+            }else {
+                resetFillingProgress();
+           }      
+        }       
     };                 
 };
 
@@ -69,6 +77,8 @@ export function slidePage() {
 
            document.querySelector(`.page.active`).classList.remove('active');
            document.querySelector(`#${pageId}`).classList.add('active');
+
+           scrollControls();
 
            if(target.hasAttribute('data-progress-bar')) {
                 startFillingProgress();
