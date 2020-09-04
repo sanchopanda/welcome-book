@@ -15,6 +15,11 @@
     padding: 0;
     border: none;
     cursor: pointer;
+    transition: background-color .3s;
+
+    &:hover {
+      background-color: $color-dark-orange;
+    }
     
     &:focus {
       outline: none;
@@ -24,7 +29,7 @@
       width: rem(52);
       height: rem(52);
       pointer-events: none;
-    }
+    }   
 
     &--next {
       svg {

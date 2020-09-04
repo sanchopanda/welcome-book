@@ -1,7 +1,7 @@
 .page {
   padding: rem(144) rem(72) rem(154) rem(154);
 
-  //min-height: 100vh;
+  min-height: 100vh;
   height: 62.5vw;
 
   &:not(.page--static) {
@@ -11,6 +11,19 @@
   &.active {
     display: flex;
     @include fade-in;
+  }
+
+  &__title {
+    margin-bottom: rem(50);
+  }
+
+  &__number {
+    font-size: rem(500);
+    position: absolute;
+    top: rem(-210);
+    right: 0;
+    opacity: .2;
+    font-weight: 500;
   }
 
   .container {

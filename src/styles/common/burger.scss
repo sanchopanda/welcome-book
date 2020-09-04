@@ -3,6 +3,7 @@
   @include reset-button;
 
   position: absolute;
+  z-index: 10;
 
   top: rem(144);
   right: rem(144);
