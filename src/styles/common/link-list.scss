@@ -1,6 +1,18 @@
 .link-list {
   @include reset-list;
   display: flex;
+
+  &--social {
+    position: absolute;
+    //transform: rotate(90deg);
+    z-index: 1001;
+    writing-mode: tb-rl;
+    padding: 0;
+    margin: 0;
+
+    top: 50%;
+    right: rem(144);
+  }
 }
 
 .link-toggle {
@@ -8,5 +20,13 @@
   cursor: pointer;
   &.active {
     color: $color-orange;
+  }
+
+  &:hover {
+    color: $color-orange;
+  }
+
+  a {
+    color: currentColor;
   }
 }

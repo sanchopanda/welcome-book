@@ -14,6 +14,10 @@
   flex-direction: column;
   justify-content: space-between;
 
+  &:hover {
+    color: $color-orange;
+  }
+
   span {
     display: block;
 
