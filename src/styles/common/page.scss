@@ -18,6 +18,7 @@
   }
 
   &__left, &__right {
+    height: 100%;
     width: 50%;
     padding-right: rem(224);
     padding-top: rem(256);
@@ -68,5 +69,11 @@
       display: flex;
       @include fade-in;
     }
+  }
+
+  &--geografy {
+    background-image: url('../img/map.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }

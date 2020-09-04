@@ -24,7 +24,13 @@
 
   &__item {
     flex-grow: 1;
-  }
+
+    padding-right: rem(100);
+
+    &:last-child {
+      padding-right: 0;
+    }
+  } 
 }
 
 .factor {
@@ -37,7 +43,7 @@
 
 .factor-geografy {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
 }
 
 
