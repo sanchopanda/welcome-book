@@ -1,0 +1,35 @@
+.person-info {
+  display: flex;
+  height: 100%;
+
+  &__text, &__photo {
+    width: 50%;
+  }
+
+  &__text {
+    padding-right: rem(80);
+    padding-top: rem(90);
+  }
+
+  &__photo {
+    display: flex;
+    height: 100%;
+    background: url('../img/bg/person-bg.png');
+  }
+
+  &__title {
+    margin-top: rem(20);
+    margin-bottom: rem(20);
+  }
+
+  &__position {
+    margin-bottom: rem(70);
+  }
+
+  &__img {
+    width: 80%;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

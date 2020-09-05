@@ -1,0 +1,39 @@
+.leader-list {
+  @include reset-list;
+  margin-top: rem(75);
+  margin-bottom: rem(385);
+}
+
+
+.leader-card {
+  display: flex;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: rem(35);
+  margin-bottom: rem(35);
+
+
+  &:hover {
+    color: $color-orange;
+  }
+
+  @at-root .active > & {
+    color: $color-orange;
+  }
+
+
+  &__img {
+    width: rem(110);
+    min-width: rem(110);
+    height: rem(110);
+    margin-right: rem(30);
+    border-radius: 50%;
+    border: 2px solid currentColor;
+    background-color: currentColor;
+    overflow: hidden;   
+  }
+
+  &__position {
+    color: $color-white;
+  }
+}

@@ -71,6 +71,11 @@
     &--info {
       padding-top: rem(400);
     }
+
+    &--person {
+      padding-top: 0;
+      border-bottom: rem(4) solid $color-white;
+    }
   }
 
   &__subpage {

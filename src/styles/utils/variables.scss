@@ -16,3 +16,7 @@ $color-dark-orange: #b0531e;
 .color-orange {
     color: $color-orange
 }
+
+.event-none {
+    pointer-events: none;
+}

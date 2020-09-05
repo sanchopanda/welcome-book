@@ -11,6 +11,10 @@
   width: 50%;
   cursor: pointer;
 
+  &--fill {
+    width: 100%;
+  }
+
   &:hover {
     color: $color-orange;
   }
