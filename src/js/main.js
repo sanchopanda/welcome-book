@@ -6,7 +6,6 @@ import { sectionToggler } from './section-toggler.js'
 import { infoSlidePage } from './info-slide-page.js'
 import { parallaxBg } from './parallax-bg.js'
 
-
 scaleHtml();
 slidePage();
 stepSlide();

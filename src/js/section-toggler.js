@@ -1,4 +1,6 @@
 import { mapControl } from './slide-page'
+import { scrollControls } from './scroll-controls.js';
+
 
 const toggleList = document.querySelectorAll(".section-toggler");
 
@@ -24,7 +26,8 @@ export function sectionToggler() {
 
                 mapControl();
             }
-            
+
+            scrollControls();            
         })
     })
 }
