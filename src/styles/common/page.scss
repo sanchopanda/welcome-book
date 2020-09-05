@@ -94,4 +94,10 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+
+  &--history, &--leader {
+    background-image: url('../img/bg/info-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
