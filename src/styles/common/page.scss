@@ -1,8 +1,9 @@
 .page {
-  padding: rem(144) rem(72) rem(154) rem(154);
-
-  min-height: 100vh;
+  @include media-custom($tablet) {
+    padding: rem(144) rem(72) rem(154) rem(154);
+    min-height: 100vh;
   height: 62.5vw;
+  }
 
   &:not(.page--static) {
     display: none;
@@ -12,6 +13,11 @@
     display: flex;
     @include fade-in;
   }
+
+  @include tablet {
+    padding-right: rem(32);
+    padding-left: rem(32);
+  } 
 
   &__title {
     margin-bottom: rem(50);

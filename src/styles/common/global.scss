@@ -52,16 +52,6 @@ img {
   max-width: 100%;
 }
 
-
-
-.container {
-  padding: 0 16px;
-  margin: 0 auto;
-  @include media-tablet {
-    padding: 0 40px;
-  }
-}
-
 .app {
   position: relative;
   background-image: url('../img/bg/main-bg.jpg');

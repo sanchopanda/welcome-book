@@ -1,6 +1,12 @@
-
 .page-starter {
-  padding: rem(400) rem(370) rem(385) rem(154);
+  @include media-custom($tablet) {
+    padding: rem(400) rem(370) rem(385) rem(154);
+  }
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+  }
 
   .page-content {
     width: 100%;
@@ -8,14 +14,8 @@
     overflow-y: scroll;
   }
 
-  &__number {
-    margin-right: rem(28);
-    margin-bottom: rem(22);
-  }
-
   &__button {
     @include reset-button;
-    height: rem(330);
     display: flex;
     width: 100%;
     margin-right: rem(40);
@@ -24,20 +24,42 @@
     align-items: flex-end;
     border-bottom: 0.4rem solid $color-white;
 
+    @include media-custom($tablet) {
+      height: rem(330);
+    }
+
+    @include tablet {
+      flex-direction: column;
+      padding-top: rem(100);
+      padding-bottom: rem(66);
+      padding-right: rem(54);
+    }
+
     &:hover {
       color: $color-orange;
       border-color: $color-orange;
     }
 
-
     .arrow {
       margin-left: auto;
       margin-bottom: rem(22);
+
+      @include tablet {
+        margin-top: rem(30);
+      }
     }
-  } 
+  }
+
+  &__number {
+    margin-right: rem(28);
+    margin-bottom: rem(22);
+
+    @include tablet {
+      align-self: flex-start;
+    }
+  }
 
   .burger {
     color: $color-orange;
   }
-
 }

@@ -15,6 +15,11 @@
   flex-direction: column;
   justify-content: space-between;
 
+  @include tablet {
+    top: rem(75);
+    right: rem(64);
+  } 
+
   &:hover {
     color: $color-orange;
   }

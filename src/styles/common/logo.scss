@@ -3,6 +3,11 @@
   position: absolute;
   top: rem(144);
   left: rem(144);
+
+  @include tablet {
+    top: rem(32);
+    left: rem(32);
+  } 
   
   &__img {
     width: rem(109);

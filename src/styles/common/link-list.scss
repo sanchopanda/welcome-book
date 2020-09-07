@@ -3,15 +3,19 @@
   display: flex;
 
   &--social {
-    position: absolute;
-    //transform: rotate(90deg);
-    z-index: 1001;
-    writing-mode: tb-rl;
-    padding: 0;
-    margin: 0;
 
-    top: 50%;
-    right: rem(144);
+    @include media-custom($tablet) {
+      position: absolute;
+      //transform: rotate(90deg);
+      z-index: 1001;
+      writing-mode: tb-rl;
+
+      top: 50%;
+      right: rem(144);
+    }
+   
+    padding: 0;
+    margin: 0;   
   }
 }
 

@@ -9,7 +9,7 @@ module.exports = function twig2html() {
   return gulp.src('src/pages/*.twig')
     .pipe(plumber())
     .pipe(twig())
-    .pipe(htmlValidator())
+    //.pipe(htmlValidator())
     //.pipe(bemValidator())
     .pipe(gulp.dest('docs'))
 }

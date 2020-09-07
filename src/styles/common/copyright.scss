@@ -1,7 +1,10 @@
 .copyright {
- position: absolute;
- bottom: rem(144);
- left: rem(144);
- transform: translateY(-0.7rem);
- z-index: 1000;
+
+ @include media-custom($tablet) {
+    position: absolute;
+    bottom: rem(144);
+    left: rem(144);
+    transform: translateY(-0.7rem);
+    z-index: 1000;
+  }
 }

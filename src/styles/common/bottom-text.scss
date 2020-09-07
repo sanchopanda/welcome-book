@@ -1,12 +1,14 @@
 .bottom-text {
-  position: absolute;
-  bottom: rem(144);
-  right: rem(385);
-  transform: translateY(-0.7rem);
-  z-index: 1000;
-
   display: flex;
   flex-wrap: nowrap;
+
+  @include media-custom($tablet) {
+    position: absolute;
+    bottom: rem(144);
+    right: rem(385);
+    transform: translateY(-0.7rem);
+    z-index: 1000;
+  }
 
   &__item:not(:last-child) {
     margin-right: rem(150);
