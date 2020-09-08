@@ -7,32 +7,12 @@
 @import "../utils/typography";
 @import "../utils/spacing";
 
+
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
-
-/* полоса прокрутки (скроллбар) */
-::-webkit-scrollbar {
-  width: rem(4); /* ширина для вертикального скролла */
-  background-color: $color-gray;
-}
-
-/* ползунок скроллбара */
-::-webkit-scrollbar-thumb {
-  background-color: $color-orange;
-}
-/* Стрелки */
-
-::-webkit-scrollbar-button:vertical:start:decrement {
- display: none;
-}
-
-::-webkit-scrollbar-button:vertical:end:increment {
-  display: none;
-}
-
 
 html {
   box-sizing: border-box;
@@ -60,5 +40,5 @@ img {
 }
 
 .scroll-wrapper {
-  overflow-y: scroll;
+  overflow-y: auto;
 }
