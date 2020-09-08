@@ -1,0 +1,84 @@
+.ps {
+	overflow: hidden !important;
+	overflow-anchor: none;
+	-ms-overflow-style: none;
+	touch-action: auto;
+	-ms-touch-action: auto;
+}
+
+.ps__rail-x,
+.ps__rail-y,
+.ps__thumb-x,
+.ps__thumb-y {
+	position: absolute;
+
+	&:before {
+		position: absolute;
+		display: block;
+		content: '';
+		border-radius: 0;
+	}
+}
+
+.ps__rail-y {
+	width: rem(4);
+	bottom: 0;
+
+	&:before {
+		height: rem(4);
+		right: 0;
+		top: rem(2);
+		width: 100%;
+		background-color: rgba($color-white, 0.3);
+	}
+}
+
+.ps--active-x > .ps__rail-x,
+.ps--active-y > .ps__rail-y {
+	display: block;
+}
+
+.ps__rail-y {   
+  opacity: 1; 
+}
+
+.ps__rail-y:hover>.ps__thumb-y {
+  background-color: $color-orange;
+}
+
+.ps .ps__rail-y {
+  width: rem(4);
+  background-color: rgba($color-white, 0.3);
+}
+
+.ps--clicking {
+
+}
+
+.ps__thumb-y {
+	width: rem(4);
+  bottom: 0;
+  background-color: $color-orange;
+
+
+	&:before {
+		top: rem(2);
+		right: 0;
+		height: rem(4);
+		width: 100%;
+		background-color: $color-orange;
+	}
+}
+
+/* MS supports */
+@supports (-ms-overflow-style: none) {
+	.ps {
+		overflow: auto !important;
+	}
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.ps {
+		overflow: auto !important;
+	}
+}
