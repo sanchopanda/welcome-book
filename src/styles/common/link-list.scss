@@ -17,7 +17,14 @@
     padding: 0;
     margin: 0;   
   }
+
+  &__slash {
+    margin-bottom: rem(10);
+    margin-top: rem(10);
+  }
 }
+
+
 
 .link-toggle {
   margin-right: rem(10);
