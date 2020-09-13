@@ -3,7 +3,7 @@
   @include reset-button;
 
   position: absolute;
-  z-index: 10;
+  z-index: 1004;
 
   top: rem(144);
   right: rem(144);
@@ -26,9 +26,19 @@
 
   span {
     display: block;
-
     width: 100%;
     height: rem(4);
     background-color: currentColor;
+    transition: transform .5s;
+  }
+
+  &.open {
+    span:first-child {
+      transform: rotate(45deg) translate(1rem, 1rem);   
+      
+    }
+    span:last-child {
+      transform: rotate(-45deg);
+    }
   }
 }

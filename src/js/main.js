@@ -7,6 +7,7 @@ import { infoSlidePage } from './info-slide-page.js'
 import { parallaxBg } from './parallax-bg.js'
 import { contentSwitcher } from './contentSwitcher.js';
 import { smoothScrollInit } from './smooth-scroll';
+import { openMenu } from './burger.js';
 
 scaleHtml();
 slidePage();
@@ -16,3 +17,4 @@ infoSlidePage();
 parallaxBg();
 contentSwitcher();
 smoothScrollInit(); 
+openMenu();

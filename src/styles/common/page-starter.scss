@@ -1,6 +1,20 @@
 .page-starter {
   @include media-custom($tablet) {
     padding: rem(400) rem(370) rem(385) rem(154);
+    display: flex!important;
+    transform: translateY(-100vh);
+    transition: transform 1s;
+    animation: none;
+    position: absolute;
+    z-index: 1002;
+    background-image: url('../img/bg/main-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+
+    &.open {
+      transform: translateY(0);
+    }
   }
 
   @include tablet {
@@ -10,9 +24,9 @@
 
   .page-content {
     width: 100%;
-    border-top: 0.4rem solid $color-white;
-    overflow-y: scroll;
   }
+
+ 
 
   &__button {
     @include reset-button;
