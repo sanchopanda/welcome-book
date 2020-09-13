@@ -27,7 +27,7 @@ export function scrollControls() {
           );
           shift = shift + 10;
   
-          if (shift < relativePos) requestAnimationFrame(scroll);
+          if (shift <= relativePos) requestAnimationFrame(scroll);
         });
       } else {
         requestAnimationFrame(function scroll() {

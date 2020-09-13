@@ -1,7 +1,7 @@
 .page-control {
   position: absolute;
   width: calc(50% - 4rem);
-  bottom: rem(150);
+  bottom: rem(120);
   right: 0;
   z-index: 1000;
   overflow: hidden;
@@ -45,6 +45,10 @@
       background-color: $color-white;
       top: 0;
       left: 0;
+    }
+
+    &[data-control='first-day'] {
+      padding-left: rem(5);
     }
   }
 
