@@ -11,6 +11,15 @@
   width: 50%;
   cursor: pointer;
 
+  &:hover {
+    z-index: 1;
+  }
+
+  &:nth-child(2){
+    margin-left: -0.3rem;
+  }
+
+
   &--fill {
     width: 100%;
   }
