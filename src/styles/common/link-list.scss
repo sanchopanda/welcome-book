@@ -8,10 +8,10 @@
       position: absolute;
       //transform: rotate(90deg);
       z-index: 1001;
-      writing-mode: tb-rl;
-
+      //writing-mode: tb-rl;
+      transform: rotate(270deg);
       top: 50%;
-      right: rem(144);
+      right: rem(-60);
     }
    
     padding: 0;
@@ -19,8 +19,8 @@
   }
 
   &__slash {
-    margin-bottom: rem(10);
-    margin-top: rem(10);
+    margin-left: rem(10);
+    margin-right: rem(10);
   }
 }
 

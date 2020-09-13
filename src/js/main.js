@@ -6,7 +6,7 @@ import { sectionToggler } from './section-toggler.js'
 import { infoSlidePage } from './info-slide-page.js'
 import { parallaxBg } from './parallax-bg.js'
 import { contentSwitcher } from './contentSwitcher.js';
-import { perfectScrollInit } from './perfect-scroll.js';
+import { smoothScrollInit } from './smooth-scroll';
 
 scaleHtml();
 slidePage();
@@ -15,4 +15,4 @@ sectionToggler();
 infoSlidePage();
 parallaxBg();
 contentSwitcher();
-perfectScrollInit();
+smoothScrollInit(); 
