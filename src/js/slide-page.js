@@ -36,7 +36,6 @@ const arrowToggle = (direction) => {
     if(nextPage) {
         const activeId = activePage.id;
         const nextId = nextPage.id;
-        console.log(nextSlideId);
         if(nextSlideId >= 1 && nextSlideId <= 3) {
             const nextControl = document.querySelector(`.page-control__item[data-control = "${nextId}"]`);
 

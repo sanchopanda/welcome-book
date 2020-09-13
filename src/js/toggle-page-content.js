@@ -3,7 +3,6 @@
 export function togglePageContent(toggler) {
     const pageContentList = document.querySelector(".page__right--slider");
     const id = toggler.dataset.stepId;    
-    console.log(pageContentList);
    const targetPageContent = pageContentList.querySelector(`#${id}`)
 
    if(!targetPageContent.classList.contains('active')) {

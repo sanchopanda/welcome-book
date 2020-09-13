@@ -16,6 +16,31 @@ const fillingProgress = (index) => {
     progressBar.style.width = `${100 / stepsCount * (index + 1)}%`
 }
 
+export function chooseStep()  {
+    let nextStep = stepsList.querySelector('.next');
+    
+    if(nextStep) {
+        nextStep.classList.remove('next');
+    }
+    
+    let prevStep = stepsList.querySelector('.prev');
+
+    if(prevStep) {
+        prevStep.classList.remove('prev');
+    }
+
+    const activeStep = stepsList.querySelector('.active');    
+    nextStep = activeStep.nextElementSibling;
+    if(nextStep) {
+        nextStep.classList.add('next');
+    }
+    
+    prevStep = activeStep.previousElementSibling;
+    if(prevStep) {
+        prevStep.classList.add('prev'); 
+    }   
+}
+
 export function startFillingProgress() {
     const activeStep = stepsList.querySelector('.step.active');
     const index = Array.prototype.indexOf.call(steps, activeStep);
@@ -30,7 +55,6 @@ export function stepSlide() {
     stepsList.addEventListener('click', (e) => {
         const target = e.target;
         if(target.classList.contains('step') && !target.classList.contains('active')) {
-            console.log(1)
             const pageId = target.dataset.control;
 
            document.querySelector(`.step.active`).classList.remove('active');
@@ -41,6 +65,8 @@ export function stepSlide() {
            fillingProgress(index);   
            
            togglePageContent(target);
+
+           chooseStep();
         } 
     })
 };

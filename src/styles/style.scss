@@ -10,9 +10,10 @@
 
 @import "common/page-control";
 
-@import "../../node_modules/perfect-scrollbar/css/perfect-scrollbar";
+//@import "../../node_modules/perfect-scrollbar/css/perfect-scrollbar";
 
-@import "libs/perfect-scroll";
+//@import "libs/perfect-scroll";
+
 
 
 
@@ -54,6 +55,10 @@
 
 @import "common/person-info";
 
+@import "common/button-back";
+
+
+@import "libs/smooth-scroll";
 
 
 

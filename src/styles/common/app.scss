@@ -1,6 +1,8 @@
 
 .app {
   position: relative;
+  height: 100vh;
+  min-height: 30vw;
   background-image: url('../img/bg/main-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;

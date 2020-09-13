@@ -10,11 +10,9 @@
   border: 0.4rem solid currentColor;
   width: 50%;
   cursor: pointer;
+  transition: color .3s;
 
-  &:hover {
-    z-index: 1;
-  }
-
+ 
   &:nth-child(2){
     margin-left: -0.3rem;
   }
@@ -26,6 +24,7 @@
 
   &:hover {
     color: $color-orange;
+    z-index: 1;
   }
 
   .arrow {

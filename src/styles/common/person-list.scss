@@ -8,7 +8,21 @@
   }
 
   &__photo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     margin-bottom: rem(32);
+    height: rem(479);
+    background-image: url(../img/person/person-bg.png);
+    cursor: pointer;
+  }
+
+  &__person {
+    height: 94%;
+    transition: height 0.3s;
+    @at-root .person-list__photo:hover & {
+      height: 96%;
+    }
   }
 
   &__phone {

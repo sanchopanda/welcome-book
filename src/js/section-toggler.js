@@ -1,5 +1,7 @@
 import { mapControl } from './slide-page'
 import { scrollControls } from './scroll-controls.js';
+import { toggleMenu } from './burger';
+
 
 
 const toggleList = document.querySelectorAll(".section-toggler");
@@ -20,11 +22,15 @@ export function sectionToggler() {
 
             if(toggle.hasAttribute('data-control')){
                 const id = toggle.dataset.control;
-                console.log(id);
                 document.querySelector(`.page.active`).classList.remove('active');
                 document.querySelector(`#${id}`).classList.add('active');
 
                 mapControl();
+            }
+
+
+            if(document.querySelector('.menu.open')) {
+                toggleMenu();
             }
 
             scrollControls();            

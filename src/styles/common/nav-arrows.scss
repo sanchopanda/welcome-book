@@ -16,9 +16,10 @@
     border: none;
     cursor: pointer;
     transition: background-color .3s;
+    transition: color .3s;
 
     &:hover {
-      background-color: $color-dark-orange;
+      color: $color-white;
     }
     
     &:focus {

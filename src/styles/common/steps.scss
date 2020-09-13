@@ -12,6 +12,11 @@
 
 .step {
   cursor: pointer;
+  opacity: 0.5;
+  transition-property: opacity;
+  transition-duration: .3s;
+
+ 
 
   width: 16.66%;
 
@@ -24,6 +29,8 @@
     padding-top: rem(20);
     padding-bottom: rem(20);    
     pointer-events: none;
+    transition-property: color;
+    transition-duration: .3s;
 
     &::before {
       position: absolute;
@@ -51,6 +58,7 @@
   }
 
   &.active {
+    opacity: 1;
     .step__number {
       color: $color-orange;
     }
@@ -59,5 +67,9 @@
       display: block;
       padding-right: rem(32);
     }
+  }
+
+  &.prev, &.next {
+    opacity: 1;
   }
 }
