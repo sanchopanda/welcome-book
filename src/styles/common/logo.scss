@@ -4,6 +4,8 @@
   top: rem(144);
   left: rem(144);
 
+  cursor: pointer;
+
   @include tablet {
     top: rem(32);
     left: rem(32);

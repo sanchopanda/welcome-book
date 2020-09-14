@@ -27,10 +27,23 @@
     font-size: rem(500);
     position: absolute;
     top: rem(-210);
-    right: 0;
-    opacity: .2;
+    right: 0;  
     font-weight: 500;
+    opacity: 0;
+
+    @at-root .active & {
+      animation: 2s fade;
+    }
   } 
+
+  @keyframes fade {
+    0% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 
   &__left, &__right {
     height: 100%;
