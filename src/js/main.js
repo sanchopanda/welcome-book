@@ -1,7 +1,7 @@
 
 import { scaleHtml } from './scale-html.js';
 import { slidePage } from './slide-page.js';
-import { stepSlide, startFillingProgress, chooseStep } from './step-slide.js'
+import { stepSlide, startFillingProgress, chooseStep, stepWheel } from './step-slide.js'
 import { sectionToggler } from './section-toggler.js'
 import { infoSlidePage } from './info-slide-page.js'
 import { parallaxBg } from './parallax-bg.js'
@@ -23,3 +23,4 @@ contentSwitcher();
 smoothScrollInit(); 
 openMenu();
 chooseStep();
+stepWheel();
