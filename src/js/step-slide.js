@@ -51,13 +51,19 @@ function onWheel(e) {
 
     chooseStep();
     togglePageContent(next);
+    const index = Array.prototype.indexOf.call(steps, next);
+
+      fillingProgress(index);
   } else if (prev && delta < 0) {
     currentStep.classList.remove("active");
     prev.classList.remove("prev");
     prev.classList.add("active");   
 
     chooseStep();
-    togglePageContent(next);
+    togglePageContent(prev);
+    const index = Array.prototype.indexOf.call(steps, prev);
+
+      fillingProgress(index);
   }
 }
 
