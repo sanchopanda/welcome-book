@@ -13,9 +13,14 @@
   }
 
   &__photo {
+    position: absolute;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    right: 0;
     display: flex;    
-    background: url('../img/bg/person-bg.png');
-    height: rem(1200);
+    background: url('../img/bg/person-bg.png');  
+    max-height: rem(1200); 
   }
 
   &__title {

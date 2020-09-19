@@ -63,7 +63,8 @@
     "stylelint-config-standard": "^19.0.0",
     "stylelint-config-standard-scss": "^1.1.0",
     "stylelint-scss": "^3.18.0",
-    "webpack-stream": "^5.2.1"
+    "webpack-stream": "^5.2.1",
+    "yall-js": "^3.2.0"
   },
   "editorconfig-cli": [
     "*.json",

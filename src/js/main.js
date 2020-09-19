@@ -9,6 +9,8 @@ import { contentSwitcher } from './contentSwitcher.js';
 import { smoothScrollInit } from './smooth-scroll';
 import { openMenu } from './burger.js';
 
+import yall from 'yall-js'
+
 if (window.NodeList && !NodeList.prototype.forEach) {
     NodeList.prototype.forEach = Array.prototype.forEach;
  }
@@ -23,4 +25,13 @@ contentSwitcher();
 smoothScrollInit(); 
 openMenu();
 chooseStep();
-stepWheel();
+stepWheel();2
+
+const images = document.querySelectorAll('img[data-src]');
+
+images.forEach(function(img) {
+  img.setAttribute('src', img.getAttribute('data-src'));
+  img.onload = function() {
+    img.removeAttribute('data-src');
+  };
+});
