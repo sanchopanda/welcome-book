@@ -84,11 +84,15 @@ export function chooseStep() {
   const newNextStep = activeStep.nextElementSibling;
   if (newNextStep) {
     newNextStep.classList.add("next");
+    if (newNextStep.classList.contains('visited')) {
+      newNextStep.classList.remove('visited')
+    }
   }
 
   const newPrevStep = activeStep.previousElementSibling;
   if (newPrevStep) {
     newPrevStep.classList.add("prev");
+    newPrevStep.classList.add("visited");
   }
 }
 
