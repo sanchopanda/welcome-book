@@ -1,8 +1,12 @@
 .scrollbar-track-y {
-	width: 4px !important;
+	width: rem(4) !important;
 }
 
 .scrollbar-thumb {
-	width: 4px !important;
+	width: rem(4) !important;
 	background: $color-orange !important;
+}
+
+.scroll-content {
+	min-height: 100%;
 }

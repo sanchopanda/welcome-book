@@ -7,6 +7,8 @@ const pages = document.querySelectorAll(".page");
 const navArrows = document.querySelector(".nav-arrows");
 const pageControl = document.querySelector(".page-control");
 
+
+
 const choseActivePage = () => {
     return document.querySelector('.page.active');
 }
@@ -64,28 +66,33 @@ export function slidePage() {
 
     mapControl();    
 
-    pageControl.addEventListener('click', (e) => {
-        const target = e.target;
+    const controls = pageControl.querySelectorAll('.page-control__item');
 
-        if(target.classList.contains('page-control__item') && !target.classList.contains('active')) {
-
-           const pageId = target.dataset.control;
-
-           document.querySelector(`.page-control__item.active`).classList.remove('active');
-           target.classList.add('active');
-
-           document.querySelector(`.page.active`).classList.remove('active');
-           document.querySelector(`#${pageId}`).classList.add('active');
-
-           scrollControls();
-
-           if(target.hasAttribute('data-progress-bar')) {
-                startFillingProgress();
-           } else {
-                resetFillingProgress();
-           }            
-        } 
-    });
+    controls.forEach((control) => {
+        control.addEventListener('click', (e) => {
+            const target = control;
+    
+    
+    
+    
+               const pageId = target.dataset.control;
+    
+               document.querySelector(`.page-control__item.active`).classList.remove('active');
+               target.classList.add('active');
+    
+               document.querySelector(`.page.active`).classList.remove('active');
+               document.querySelector(`#${pageId}`).classList.add('active');
+    
+               scrollControls();
+    
+               if(target.hasAttribute('data-progress-bar')) {
+                    startFillingProgress();
+               } else {
+                    resetFillingProgress();
+               }            
+        });
+    })
+  
 
     navArrows.addEventListener('click', (e) => {
         const target = e.target;

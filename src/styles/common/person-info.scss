@@ -1,6 +1,6 @@
 .person-info {
   display: flex;
-  height: 100%;
+  min-height: 100%;
 
   &__text, &__photo {
     width: 50%;
@@ -15,6 +15,7 @@
   &__photo {
     display: flex;    
     background: url('../img/bg/person-bg.png');
+    height: rem(1200);
   }
 
   &__title {
