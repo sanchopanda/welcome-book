@@ -14,14 +14,16 @@
   cursor: pointer;
   opacity: 0.5;
   transition-property: opacity;
-  transition-duration: .3s;
-
- 
+  transition-duration: .5s; 
 
   width: 16.66%;
 
   &__des {
+    opacity: 0;
     margin-top: rem(24);
+    transition: opacity .8s;
+    pointer-events: none;
+
   }
 
   &__number {
@@ -30,7 +32,7 @@
     padding-bottom: rem(20);    
     pointer-events: none;
     transition-property: color;
-    transition-duration: .3s;
+    transition-duration: .8s;
 
     &::before {
       position: absolute;
@@ -50,12 +52,7 @@
       bottom: 0;
       left: 0;
     }    
-  }
-
-  &__des {
-    display: none;
-    pointer-events: none;
-  }
+  }  
 
   &.active {
     opacity: 1;
@@ -64,7 +61,7 @@
     }
 
     .step__des {
-      display: block;
+      opacity: 1;
       padding-right: rem(32);
     }
   }

@@ -33,7 +33,7 @@
     width: rem(368);
     height: rem(230);
     margin-right: rem(80);
-    padding-top: rem(30);
+    padding-top: rem(24);
     position: relative;
 
     &::before {
@@ -54,7 +54,7 @@
 
   &__number{
     display: block;
-    margin-bottom: rem(24);
+    margin-bottom: rem(8);
   }
 
   &__number, &__text {
