@@ -5,33 +5,33 @@ a {
 .h1 {
   display: block;
   text-transform: uppercase;
-  font-size: rem(100);
+  font-size: rem(80);
   font-weight: 600;
   margin: 0;
 }
 
 .h3 {
-  font-size: rem(60);
+  font-size: rem(40);
   font-weight: 600;
 }
 
 .text-large {
-  font-size: rem(60);
+  font-size: rem(50);
   font-weight: 400;
 }
 
 p, .text-default {
-  font-size: rem(36);
+  font-size: rem(30);
   font-weight: normal;
 }
 
 
 .text-default-small {
-    font-size: rem(28);
+    font-size: rem(24);
 }
 
 .text-small {
-    font-size: rem(24);
+    font-size: rem(20);
 }
 
 .italic {

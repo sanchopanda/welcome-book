@@ -1,0 +1,34 @@
+.parallax-scene {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+
+.mouse-parallax-bg {
+  position: absolute;
+  background-image: url("../img/bg/paralax-bg.png");
+  background-position: 90% 100%;
+  background-repeat: no-repeat;
+  background-size: auto 93% ;  
+ width: 100%;
+ height: 100%;
+
+  
+ // transition: all 0.1s ease;    
+}
+
+.mouse-parallax-bg-reverse {
+  //position: absolute;
+  background-image: url('../img/bg/welcome-bg.jpg');
+  background-size: 100% auto ;
+  background-repeat: no-repeat;
+  background-position: right top;  
+  width: 100%;
+  height: 100%;   
+ // right: 0;
+ // bottom: 0;
+ // transition: all 0.1s ease;    
+}
