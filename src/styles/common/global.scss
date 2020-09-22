@@ -49,6 +49,6 @@ img {
   position: absolute;
   width: 100%;
   height: rem(4);
-  background-color: $color-white;
+  background-color: rgba($color-white, 0.5);
   bottom: rem(-40);
 }
