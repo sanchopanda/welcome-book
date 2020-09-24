@@ -3,6 +3,7 @@ import { startFillingProgress, resetFillingProgress } from './step-slide.js';
 import { scrollControls } from './scroll-controls.js';
 
 
+
 const pages = document.querySelectorAll(".page");
 const navArrows = document.querySelector(".nav-arrows");
 const pageControl = document.querySelector(".page-control");

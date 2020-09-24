@@ -27,13 +27,13 @@ export function stepWheel() {
           page.addEventListener("wheel", onWheel);
         } else if ('onmousewheel' in document) {
           // устаревший вариант события
-          page.addEventListener("mousewheel", onWheel);
+          page.addEventListener("mousewheel",  onWheel);
         } else {
           // Firefox < 17
-          page.addEventListener("MozMousePixelScroll", onWheel);
+          page.addEventListener("MozMousePixelScroll",  onWheel);
         }
       } else { // IE8-
-        page.attachEvent("onmousewheel", onWheel);
+        page.attachEvent("onmousewheel",  onWheel);
       }
 }
 
