@@ -16,6 +16,8 @@ const progressBar = control.querySelector(".page-control__progress");
 
 const stepsCount = stepsList.children.length;
 
+let canAnimate = true;
+
 const fillingProgress = (index) => {
   progressBar.style.width = `${(100 / stepsCount) * (index + 1)}%`;
 };
@@ -38,33 +40,41 @@ export function stepWheel() {
 }
 
 function onWheel(e) {
-  const currentStep = stepsList.querySelector(".active");
-  const next = stepsList.querySelector(".next");
-  const prev = stepsList.querySelector(".prev");
+  
+  if(canAnimate) {
+    const currentStep = stepsList.querySelector(".active");
+    const next = stepsList.querySelector(".next");
+    const prev = stepsList.querySelector(".prev");
+    let delta = e.deltaY || e.detail || e.wheelDelta;
 
-  let delta = e.deltaY || e.detail || e.wheelDelta;
+    if (next && delta > 0) {
+      currentStep.classList.remove("active");
+      next.classList.remove("next");
+      next.classList.add("active");   
+  
+      chooseStep();
+      togglePageContent(next);
+      const index = Array.prototype.indexOf.call(steps, next);
+  
+        fillingProgress(index);
+    } else if (prev && delta < 0) {
+      currentStep.classList.remove("active");
+      prev.classList.remove("prev");
+      prev.classList.add("active");   
+  
+      chooseStep();
+      togglePageContent(prev);
+      const index = Array.prototype.indexOf.call(steps, prev);
+  
+        fillingProgress(index);
+    }
 
-  if (next && delta > 0) {
-    currentStep.classList.remove("active");
-    next.classList.remove("next");
-    next.classList.add("active");   
+    canAnimate = false;
 
-    chooseStep();
-    togglePageContent(next);
-    const index = Array.prototype.indexOf.call(steps, next);
-
-      fillingProgress(index);
-  } else if (prev && delta < 0) {
-    currentStep.classList.remove("active");
-    prev.classList.remove("prev");
-    prev.classList.add("active");   
-
-    chooseStep();
-    togglePageContent(prev);
-    const index = Array.prototype.indexOf.call(steps, prev);
-
-      fillingProgress(index);
-  }
+    setTimeout(()=> {
+      canAnimate = true;
+    }, 300);
+  }  
 }
 
 export function chooseStep() {
