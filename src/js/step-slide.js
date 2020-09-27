@@ -93,17 +93,25 @@ export function chooseStep() {
   const activeStep = stepsList.querySelector(".active");
   const newNextStep = activeStep.nextElementSibling;
   if (newNextStep) {
-    newNextStep.classList.add("next");
-    if (newNextStep.classList.contains('visited')) {
-      newNextStep.classList.remove('visited')
-    }
+    newNextStep.classList.add("next");   
   }
 
   const newPrevStep = activeStep.previousElementSibling;
   if (newPrevStep) {
     newPrevStep.classList.add("prev");
-    newPrevStep.classList.add("visited");
   }
+
+  let beforeCurrentStep = true;
+
+  steps.forEach((step) => {
+    if (step.classList.contains('active')) {
+      beforeCurrentStep = false;
+    } else if(beforeCurrentStep) {
+      step.classList.add("visited");
+    } else {
+      step.classList.remove("visited");
+    }
+  })
 }
 
 export function startFillingProgress() {
@@ -137,4 +145,16 @@ export function stepSlide() {
       chooseStep();
     }
   });
+}
+
+export function stepHover() {
+  const stepTitle = 
+  steps.forEach((step) => {
+    step.addEventListener('mouseover', () => {
+      page.querySelector('.steps__title').classList.add('animation-stop')
+    })
+    step.addEventListener('mouseout', () => {
+      page.querySelector('.steps__title').classList.remove('animation-stop')
+    })
+  })
 }

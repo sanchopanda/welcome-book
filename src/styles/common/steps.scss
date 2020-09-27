@@ -2,7 +2,22 @@
 
   &__title {
     margin-bottom: rem(60);
+    animation: 1s ease infinite alternate flash;
+
+    &.animation-stop {
+      animation: none;
+    }
   } 
+
+  @keyframes flash {
+    0% {
+      color: $color-white;
+    }
+    100% {
+      color: $color-orange;
+    }
+    
+  }
 
   &__list {
     @include reset-list;

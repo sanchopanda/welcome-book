@@ -32,9 +32,15 @@ export function mapControl() {
 const arrowToggle = (direction) => {
     const activePage =  document.querySelector(`.page.active`);
     const activeSlideId = activePage.dataset.slide;
-    const nextSlideId = +activeSlideId + direction;
-    const nextPage = document.querySelector(`.page[data-slide='${nextSlideId}']`);
+    let nextSlideId = +activeSlideId + direction;   
+    
+    if(nextSlideId < 1) {
+        nextSlideId = 3;
+    } else if (nextSlideId > 3) {
+        nextSlideId = 1;
+    }
 
+    const nextPage = document.querySelector(`.page[data-slide='${nextSlideId}']`);
 
     if(nextPage) {
         const activeId = activePage.id;
@@ -56,7 +62,7 @@ const arrowToggle = (direction) => {
                 resetFillingProgress();
            }      
         }       
-    };                 
+    }        
 };
 
 
@@ -72,9 +78,6 @@ export function slidePage() {
     controls.forEach((control) => {
         control.addEventListener('click', (e) => {
             const target = control;
-    
-    
-    
     
                const pageId = target.dataset.control;
     
